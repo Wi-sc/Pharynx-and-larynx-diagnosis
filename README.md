@@ -19,7 +19,7 @@
 原图和新图对比：
 <p align="center">
   <img src="https://github.com/Wi-sc/Pharynx-and-larynx-diagnosis/blob/master/figure_2.png" width="300" height="250"/>
-  <img src="https://github.com/Wi-sc/Pharynx-and-larynx-diagnosis/blob/master/figure_1.png" width="340" height="280"/>
+  <img src="https://github.com/Wi-sc/Pharynx-and-larynx-diagnosis/blob/master/figure_1.png" width="30" height="280"/>
 </p>
 这样，想法设法将图片变多获得相对而言大的数据集，对模型的识别能力会有质的提升。
 
