@@ -14,6 +14,5 @@ https://arxiv.org/abs/1708.04347v1
 算法实现如下：
 <div align=center><img width="400" height="250" src="https://pic4.zhimg.com/80/v2-c12c62cd54841966d95bbd45d0311d7d_hd.jpg"/></div>
 这样，想法设法将图片变多获得相对而言大的数据集，对模型的识别能力会有质的提升。
-
 ## 总结
 最后我将两种方法结合起来，既扩大数据集，又使用比较知名的模型作为预训练模型，可以很容易得到不错的结果。
