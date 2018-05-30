@@ -15,8 +15,12 @@ https://arxiv.org/abs/1708.04347v1
 具体做法就是任意找图中一点作为轴心，将原图上的每一点用极坐标系表示，然后分别以r、theta 作为新图的横、纵坐标，绘制得到新图片。
 <div align=center><img src="https://pic3.zhimg.com/80/v2-a0f5bc32fd5a4647f658f79467bb0796_hd.jpg"/></div>
 算法实现如下：
-<div align=center><img width="400" height="250" src="https://pic4.zhimg.com/80/v2-c12c62cd54841966d95bbd45d0311d7d_hd.jpg"/></div>
+<div align=center><img width="400" height="250" src="https://pic4.zhimg.com/80/v2-c12c62cd54841966d95bbd45d0311d7d_hd.jpg"/></div>  
+原图和新图对比：
+<div align=left><img width="200" height="150" src="https://github.com/Wi-sc/Pharynx-and-larynx-diagnosis/blob/master/figure_2.png"/></div>
+<div align=left><img width="200" height="150" src="https://github.com/Wi-sc/Pharynx-and-larynx-diagnosis/blob/master/figure_1.png"/></div>
 这样，想法设法将图片变多获得相对而言大的数据集，对模型的识别能力会有质的提升。
+
 
 ## 结果
 仅采用Fine-tune的方法效果很难提升，先后尝试了Inception-v3、Inception-v4、Densnet模型都在70%-80%左右，数据集过小的弊端非常显著。  
