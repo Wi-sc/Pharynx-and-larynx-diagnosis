@@ -17,7 +17,7 @@ https://arxiv.org/abs/1708.04347v1
 算法实现如下：
 <div align=center><img width="400" height="250" src="https://pic4.zhimg.com/80/v2-c12c62cd54841966d95bbd45d0311d7d_hd.jpg"/></div>  
 原图和新图对比：
-<figure calss="half">
+<figure class="half">
   <img src="https://github.com/Wi-sc/Pharynx-and-larynx-diagnosis/blob/master/figure_2.png">
   <img src="https://github.com/Wi-sc/Pharynx-and-larynx-diagnosis/blob/master/figure_1.png">
 </figure>
