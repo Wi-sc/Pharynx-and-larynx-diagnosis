@@ -4,7 +4,7 @@
 
 ## 思路
 对于这个问题有两个解决方案，第一种是采用迁移学习的方法，将别人训练好的模型进行Fine-tune；第二种是进行数据扩充，利用旋转、对称等方法获得更多的图片。特别的，对于数据集过小的问题，2017.8 有一篇关于如何将数据进行扩充的paper介绍了Radial transform的方法用于数据扩充。链接：  
-https://arxiv.org/abs/1708.04347v1
+<https://arxiv.org/abs/1708.04347v1>
 
 ## 迁移学习
 迁移学习的方法的直接思路是把已学训练好的模型参数迁移到新的模型来帮助新模型训练。考虑到图像识别问题存在相关性的，因为大多数神经元都用于提取图像的特征，所以通过迁移学习可以将已经学到的模型参数分享给新模型，帮助我们不用像大多数网络那样从零学习。并且，由于利用了已有模型，大大加强了模型的鲁棒性，使得小数据训练后的模型泛化能力更好，不容易过拟合。  
@@ -17,10 +17,10 @@ https://arxiv.org/abs/1708.04347v1
 算法实现如下：
 <div align=center><img width="400" height="250" src="https://pic4.zhimg.com/80/v2-c12c62cd54841966d95bbd45d0311d7d_hd.jpg"/></div>  
 原图和新图对比：
-<center class="half">
+<figure class="half">
   <img src="https://github.com/Wi-sc/Pharynx-and-larynx-diagnosis/blob/master/figure_2.png" width="200" height="150"/>
   <img src="https://github.com/Wi-sc/Pharynx-and-larynx-diagnosis/blob/master/figure_1.png" width="200" height="150"/>
-</center>
+</figure>
 这样，想法设法将图片变多获得相对而言大的数据集，对模型的识别能力会有质的提升。
 
 
