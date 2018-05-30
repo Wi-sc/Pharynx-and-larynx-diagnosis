@@ -18,13 +18,13 @@
 <div align=center><img width="400" height="250" src="https://pic4.zhimg.com/80/v2-c12c62cd54841966d95bbd45d0311d7d_hd.jpg"/></div>  
 原图和新图对比：
 <p align="center">
-  <img src="https://github.com/Wi-sc/Pharynx-and-larynx-diagnosis/blob/master/figure_2.png" width="200" height="150"/>
-  <img src="https://github.com/Wi-sc/Pharynx-and-larynx-diagnosis/blob/master/figure_1.png" width="200" height="150"/>
+  <img src="https://github.com/Wi-sc/Pharynx-and-larynx-diagnosis/blob/master/figure_2.png" width="300" height="250"/>
+  <img src="https://github.com/Wi-sc/Pharynx-and-larynx-diagnosis/blob/master/figure_1.png" width="300" height="250"/>
 </p>
 这样，想法设法将图片变多获得相对而言大的数据集，对模型的识别能力会有质的提升。
 
 
 ## 结果
 仅采用Fine-tune的方法效果很难提升，先后尝试了Inception-v3、Inception-v4、Densnet模型都在70%-80%左右，数据集过小的弊端非常显著。  
-最后我将两种方法结合起来，既扩大数据集，又使用比较知名的模型作为预训练模型，可以很容易得到不错的结果。将每个图片经过旋转（顺时针旋转-30度，-25度，……30度）、翻转、Radial Transform（图像关键特征集中在喉管附近，因此取其中心作为轴心）操作得到新的14张图片。这样97张图片就扩充成了1455张。然后利用Inception-v4作为pre-train model获得（1\*1536）维的特征，之后训练分类层，最终二分类（有病、无病）结果可以达到91.7%，三分类(无病、阴性、阳性)结果可以达到95.6%。  
+最后我将两种方法结合起来，既扩大数据集，又使用比较知名的模型作为预训练模型，可以很容易得到不错的结果。将每个图片经过旋转（顺时针旋转-30度，-25度，……30度）、翻转、Radial Transform（图像关键特征集中在喉管附近，因此取其中心作为轴心）操作得到新的14张图片。这样97张图片就扩充成了1455张。然后利用Inception-v4作为pre-train model获得（1\*1536）维的特征，之后训练分类层，最终二分类（有病、无病）结果可以达到91.7%，三分类(无病、阴性、阳性)结果可以达到95.9%。  
 至于为什么三分类结果反而会比二分类结果好，我猜是因为模型在二分类情况下遇到特征不明显的图片只能随机分，而三分类则给了模型“不能仅通过图片确定”的选项，因此分类结果反而更好。当然具体原因还需要研究。
