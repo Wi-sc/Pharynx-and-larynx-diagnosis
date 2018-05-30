@@ -14,7 +14,7 @@
 将图片进行旋转和翻转可让我们的训练图片数量翻倍，从而获得更大的训练集。这个操作很简单不用赘述。需要特别介绍的是利用Radial transform扩充数据集的方法。
 具体做法就是任意找图中一点作为轴心，将原图上的每一点用极坐标系表示，然后分别以r、theta 作为新图的横、纵坐标，绘制得到新图片。
 <div align=center><img src="https://pic3.zhimg.com/80/v2-a0f5bc32fd5a4647f658f79467bb0796_hd.jpg"/></div>
-算法实现如下：
+算法思路如下：
 <div align=center><img width="400" height="250" src="https://pic4.zhimg.com/80/v2-c12c62cd54841966d95bbd45d0311d7d_hd.jpg"/></div>  
 原图和新图对比：
 <p align="center">
