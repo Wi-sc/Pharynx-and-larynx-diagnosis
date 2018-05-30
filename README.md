@@ -8,4 +8,4 @@ https://link.zhihu.com/?target=https%3A//arxiv.org/abs/1708.04347v1
 迁移学习的方法的直接思路是把已学训练好的模型参数迁移到新的模型来帮助新模型训练。考虑到图像识别问题存在相关性的，因为大多数神经元都用于提取图像的特征，所以通过迁移学习可以将已经学到的模型参数分享给新模型，帮助我们不用像大多数网络那样从零学习。并且，由于利用了已有模型，大大加强了模型的鲁棒性，使得小数据训练后的模型泛化能力更好，不容易过拟合。
 ## 数据扩充
 将图片进行旋转和翻转可让我们的训练图片数量翻倍，从而获得更大的训练集。这个操作很简单不用赘述。需要特别介绍的是利用Radial transform扩充数据集的方法。
-<div align=center>![](https://pic3.zhimg.com/80/v2-a0f5bc32fd5a4647f658f79467bb0796_hd.jpg)
+<div align=center><img width="150" height="150" src="https://pic3.zhimg.com/80/v2-a0f5bc32fd5a4647f658f79467bb0796_hd.jpg"/>
