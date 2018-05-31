@@ -18,8 +18,8 @@
 <div align=center><img width="400" height="250" src="https://pic4.zhimg.com/80/v2-c12c62cd54841966d95bbd45d0311d7d_hd.jpg"/></div>  
 原图和新图对比：
 <p align="center">
-  <img src="https://github.com/Wi-sc/Pharynx-and-larynx-diagnosis/blob/master/figure_2.png" width="300" height="250"/>
-  <img src="https://github.com/Wi-sc/Pharynx-and-larynx-diagnosis/blob/master/figure_1.png" width="300" height="250"/>
+  <img src="https://github.com/Wi-sc/Pharynx-and-larynx-diagnosis/raw/master/figure_2.png" width="300" height="250"/>
+  <img src="https://github.com/Wi-sc/Pharynx-and-larynx-diagnosis/raw/master/figure_1.png" width="300" height="250"/>
 </p>
 这样，想法设法将图片变多获得相对而言大的数据集，对模型的识别能力会有质的提升。
 
